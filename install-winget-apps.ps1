@@ -29,7 +29,7 @@ foreach ($App in $Apps) {
             --disable-interactivity
     }
     catch {
-        Write-Warning "⚠️ Installation failed for $App -> continuing build"
+        Write-Warning "Installation failed for $App -> continuing build"
     }
 }
 
@@ -37,3 +37,4 @@ Write-Host "`n=== Installation Complete ==="
 winget list
 
 Stop-Transcript
+
